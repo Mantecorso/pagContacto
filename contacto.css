@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: navajowhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgba(0, 0, 128, 0.918);
+}
+
+.supercontainer {
+    position: relative;
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.supercontainer .contenido1 {
+    max-width: 800px;
+    text-align: center;
+}
+
+.supercontainer .contenido1 h2 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+}
+
+.supercontainer .contenido1 p {
+    color: white;
+    text-indent: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contenedor1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 30px;
+    background:     linear-gradient(0deg, rgba(104, 157, 236, 0.8), 
+    rgba(25, 74, 207, 0.6) 200px),
+    url(../groWfoto-/bosque.jpg) 0 0/cover;
+    box-shadow: 10px 10px 10px rgb(166, 245, 228);
+}
+
+.contenedor1 .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor1 .contactinfo .caja1 {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contenedor1 .contactinfo .caja1 .icono {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contenedor1 .contactinfo .caja1 .texto {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+}
+
+.contenedor1 .contactinfo .caja1 .texto h3 {
+    color: #00bcd4;
+    text-shadow: 1px 1px 1px black;
+}
+
+.contacform {
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+
+.contacform h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.contacform .cajainput {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contacform .cajainput input, .contacform .cajainput textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    resize: none;
+}
+
+.contacform .cajainput span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.contacform .cajainput input:focus ~ span,
+.contacform .cajainput input:valid ~ span,
+.contacform .cajainput textarea:focus ~ span,
+.contacform .cajainput textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contacform .cajainput input[type="submit"] {
+    width: 100%;
+    background: #00bcd4;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px navy;
+    transition: .5s;
+}
+
+.contacform .cajainput input[type="submit"]:hover {
+
+    box-shadow: 10px 10px 10px #e91e63;
+}
+
+@media (max-width: 991px) {
+    .supercontainer {
+        padding: 50px;
+    }
+    .contenedor1 {
+        flex-direction: column;
+    }
+    .contenedor1 .contactinfo {
+        margin-bottom: 40px;
+    }
+    .contenedor1 .contactinfo,
+    .contacform {
+        width: 100%;
+    }
+}
