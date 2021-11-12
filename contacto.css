@@ -156,6 +156,10 @@ body {
     box-shadow: 10px 10px 10px #e91e63;
 }
 
+.colorico {
+    color: #00bcd4;
+}
+
 @media (max-width: 991px) {
     .supercontainer {
         padding: 50px;
