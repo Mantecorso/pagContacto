@@ -162,6 +162,7 @@ body {
 
 .error {
     border: 2px solid red;
+    background-color: rgb(196, 125, 125);
 }
 
 @media (max-width: 991px) {

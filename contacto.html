@@ -52,7 +52,7 @@
                  <form action="enviarf.php" method="post" id="formu1">
                     <h2>Envía un mensaje</h2>
                     <div class="cajainput">
-                        <input type="text" name="nombre" id="nombre1" maxlength="35" pattern="[A-Za-z]{2,35}" title="El nombre no puede tener números" required>
+                        <input type="text" name="nombre" id="nombre1" maxlength="35" pattern="^[a-zA-Z_]+( [a-zA-Z_]+)*$" required>
                         <span>Nombre</span>
                     </div>
                     <div class="cajainput">
