@@ -13,15 +13,15 @@ window.addEventListener('load', function() {
 
         if (nombre.value == "") {
             alert('No has escrito tu nombre.');
-        }
-        if (correo.value == "") {
+            // nombre.className  = 'error';
+            nombre.focus();
+        } else if (correo.value == "") {
             alert('No has escrito tu correo electrónico.');
-        }
-        if (mensaje.value == "") {
+            correo.focus();
+        } else if (mensaje.value == "") {
             alert('No has escrito ningún mensaje.');
-        }
-
-        if (nombre.value != "" && correo.value != "" && mensaje.value != "" && confirm("Pulsa aceptar si quieres enviar el formulario.")) {
+            mensaje.focus();
+        } else if (nombre.value != "" && correo.value != "" && mensaje.value != "" && confirm("Pulsa aceptar si quieres enviar el formulario.")) {
             alert("El formulario ha sido enviado.");
         } else {
             ev.preventDefault(); //bloquea el evento submit si no cumple todos los parametros

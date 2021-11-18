@@ -160,6 +160,10 @@ body {
     color: #00bcd4;
 }
 
+.error {
+    border: 2px solid red;
+}
+
 @media (max-width: 991px) {
     .supercontainer {
         padding: 50px;
